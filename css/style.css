@@ -1,0 +1,771 @@
+:root {
+    --primaryColor--: #ff274b;
+    --secondColor--: #f7bcf7;
+    --lightColor--: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --padding: 8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Josefin Sana', sana-serif;
+    font-size: 16px;
+    color: var(--lightColor--);
+}
+
+span {
+    color: var(--primaryColor--);
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+nav {
+    padding: 2.8rem var(--padding) 0 var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lightColor--);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: var(--primaryColor--);
+}
+
+.btn {
+    background-color: var(--primaryColor--);
+    color: var(--lightColor--);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.4s;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--primaryColor--);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    position: relative;
+    bottom: 70px;
+
+}
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondColor--);
+}
+
+h5 {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+p {
+    color: var(--secondColor--);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+/* -------------------HOME SECTION-------------------------------------------------------------------- */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.social {
+    margin-top: 3.5rem ;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.home .images {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .images img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    -webkit-transition: bottom 1s, left 1s;
+    -moz-transition: bottom 1s, left 1s;
+    -ms-transition: bottom 1s, left 1s;
+    -o-transition: bottom 1s, left 1s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.home .images:hover .circle {
+    bottom: 40px;
+}
+.home .images .woman {
+    transform: translateX(-50%);
+    height: 84%;
+    left: 54%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.home .images:hover .woman {
+    left: 45%;
+}
+
+/* -------------------  ABOUT SECTION-------------------------------------------------------------------- */
+
+.about {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .images {
+    width: 35%;
+}
+
+.about .images img {
+    width: 90%;
+}
+
+.about .text {
+    width: 35%;
+}
+
+/* -------------------SERVICES SECTION-------------------------------------------------------------------- */
+
+.services {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+}
+
+.text-1 {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 300px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+
+.card i {
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primaryColor--);
+    margin: 2rem;
+}
+
+/* -------------------SKILLS SECTION-------------------------------------------------------------------- */
+
+.skills {
+    background-color: var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .images {
+    width: 35%;
+}
+
+.skills .images img {
+    width: 90%;
+}
+
+.skills .skills-1 {
+    width: 50%;
+}
+
+.skills-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    background-color: var(--lightColor--);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill img {
+    width: 70%;
+}
+
+/* -------------------FOOTER SECTION-------------------------------------------------------------------- */
+
+footer {
+    padding: 2rem var(--padding);
+    background-color: var(--bgColor-1);
+}
+
+footer .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer p {
+    color: var(--lightColor--);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+
+footer .footer .end {
+    color: var(--primaryColor--);
+    margin-top: 1rem;
+
+}
+
+#menu {
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--lightColor--);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+
+/* -------------------MEDIA QUERIES-------------------------------------------------------------------- */
+
+@media screen and (max-width: 575px) {
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;;
+    }
+
+    .home .images {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--bgColor-2);
+    }
+
+    nav ul.is-active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .text {
+        bottom: 0;
+    }
+
+    .social {
+        margin-top: 70px;
+    }
+
+    h3 {
+        margin-bottom: 70px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .about .images {
+        display: none;
+    }
+    .about .text {
+        width: 100%;
+    }
+
+    .box {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills .images {
+        display: none;
+    }
+
+    .skills .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills .text .skills-1 {
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer .footer p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;;
+    }
+
+    .home .images {
+        display: none;
+    }
+
+    .content {
+        padding-top: 82px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--bgColor-2);
+    }
+
+    nav ul.is-active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .text {
+        bottom: 0;
+    }
+
+    .social {
+        margin-top: 30px;
+    }
+
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .about .images {
+        display: none;
+    }
+    .about .text {
+        width: 100%;
+    }
+
+    .box {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills .images {
+        display: none;
+    }
+
+    .skills .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills .text .skills-1 {
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer .footer p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;;
+    }
+
+    .home .images {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--bgColor-2);
+    }
+
+    nav ul.is-active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .text {
+        bottom: 0;
+    }
+
+    .social {
+        margin-top: 70px;
+    }
+
+    h3 {
+        margin-bottom: 70px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .about .images {
+        display: none;
+    }
+    .about .text {
+        width: 100%;
+    }
+
+    .box {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills .images {
+        display: none;
+    }
+
+    .skills .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills .text .skills-1 {
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer .footer p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;;
+    }
+
+    .home .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        background-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100;
+    }
+
+    nav > a {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: var(--bgColor-2);
+    }
+
+    nav ul.is-active {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .text {
+        bottom: 0;
+    }
+
+    .social {
+        margin-top: 70px;
+    }
+
+    h3 {
+        margin-bottom: 70px;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .about .text {
+        width: 60%;
+    }
+
+    .box {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .skills .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .skills .text .skills-1 {
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+
+    footer .footer p {
+        width: 100%;
+    }
+}
